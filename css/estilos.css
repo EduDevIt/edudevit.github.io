@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu.ttf); 
+}
+@font-face{
+    font-family: Woodland;
+    src: url(../fonts/Woodland.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#top {
+    font-family: Woodland;
+    width: 100%;
+    height: 110px;
+    background-color: rgba(0, 132, 255, 0.705);
+    font-size:3em;;
+    font-style: oblique;    
+    }
+
+#top div {  
+    width: 960px;
+    text-align: center;     
+    margin: 0px auto; 
+    }
+
+#menu {  
+    font-family: Ubuntu;
+    text-align: center;     
+    width: 100%;
+    height: 50px;
+    border-top-style:solid;
+    border-bottom-style: solid;   
+    background-color: rgb(165, 226, 21);   
+    
+}
+#menu div {
+    
+    margin: 0px auto;
+    width: 960px;
+}
+
+#listamenu > li { 
+    position: relative; /*para poner absoluta al submenu de dentro*/
+    display: inline-block; 
+    height: 25px; 
+    padding: 15px 15px 15px 15px; 
+    margin-right: 5px;
+    
+
+   } 
+    #listamenu li > ul { 
+    display: none; /*para que no se vea de primeras*/
+    position: absolute; /*respecto a la capa superior que es relativa*/
+    top: 40px; /*respecto a la superior*/
+    left: auto; /*respecto a la superior*/
+    background-color: rgb(165, 226, 21);
+    box-shadow: 3px 3px 5px rgba(100, 100, 100, 0.7); 
+    border-radius: 5px 5px 5px 5px; 
+    list-style: none; 
+    z-index: 1000; /*para que aparezca por encima de cualquier elemento*/ 
+   } 
+   #listamenu li > ul > li { 
+    width: 120px; 
+    height: 35px; 
+    padding-top: 15px; 
+    padding-left: 10px; 
+   } 
+   #listamenu li:hover ul { 
+    display: block; /*aparezca el submenú cuando pasamos por encima del menu superior*/
+   } 
+   #listamenu a { 
+    
+    color: #333333; 
+    text-decoration: none; 
+   } 
+
+   main { 
+    font-family: Ubuntu;
+    width: 100%;    
+    background-image: url(../img/fondo1.jpg);     
+   } 
+   
+   #cajacentral{
+       width: 600px;
+       margin: 0px auto;    
+       
+   }
+
+   #textoizq {
+    text-align: justify;
+    margin: 20px 20px;
+    float: left; 
+    padding: 30px; 
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #FFFFFF; 
+   }
+
+   #textoder {
+    text-align: justify;
+    margin: 20px 20px;
+    float: right;
+    padding: 30px; 
+    border-radius: 10px;
+    border-style: solid;
+    background-color: #FFFFFF; 
+   }
+   .imagen {
+       margin: 10px;       
+       padding: 10px;
+       border-style: solid;
+       
+   }
+   #limpiar{
+       clear: both;
+   }
+   
+   footer {
+    font-family: Ubuntu;
+       width: 100%;
+       background-color: rgba(0, 132, 255, 0.705);
+   }
+   #bot > div {
+    width: 960px;
+    margin: 0px auto;
+   }
+    
+    #cajafooter{
+        float: left;
+        margin: 20px 20px;
+        padding: 30px; 
+        border-radius: 10px;
+        border-style: solid;
+        background-color: rgb(165, 226, 21);
+        
+
+    }
+    #bot a {
+        text-decoration: none;
+        color: black;
+    }
+    footer div p {
+       padding: 2px 50px 2px 50px;       
+       
+       
+   
+   }
+    
+
+
+
+   
